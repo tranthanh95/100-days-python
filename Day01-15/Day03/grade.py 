@@ -1,0 +1,25 @@
+"""
+Conversion of 100-point system to grade system
+90 points or more, output A
+80 points to 89 points, output B
+70 points to 79 points, output C
+60 minutes to 69 minutes, output D
+Below 60 points, output E
+Version: 0.1
+Author: thanhtv
+Date: 2018-02-28
+"""
+
+score = float(input('Please enter grades: '))
+if score >= 90:
+    grade = 'A'
+elif score >= 80:
+    grade = 'B'
+elif score >= 70:
+    grade = 'C'
+elif score >= 60:
+    grade = 'D'
+else:
+    grade = 'E'
+
+print("The corresponding level is:", grade)
