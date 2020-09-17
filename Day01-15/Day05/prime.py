@@ -12,7 +12,9 @@ def check_prime(number):
     if number <= 1:
         return False
     
-    for index in range(2, math.ceil(sqrt(number))):
+    # print(math.ceil(sqrt(number)))
+
+    for index in range(2, math.ceil(sqrt(number)) + 1):
         if number % index == 0:
             return False
 
@@ -21,3 +23,5 @@ def check_prime(number):
 for num in range(2, 100):
     if check_prime(num):
         print(num)
+
+# print(check_prime(25))
